@@ -1,0 +1,25 @@
+.mat-mdc-card-header {
+display: flex;
+padding: 25px;
+justify-content: center;
+}
+mat-card {
+width: 25vw;
+margin-top: 50px;
+}
+.mat-mdc-card-header {
+display: flex;
+padding: 25px;
+}
+.mat-mdc-card-content:last-child {
+padding: 20px;
+}
+
+form {
+display: flex;
+flex-direction: column;
+}
+
+button {
+margin-top: 20px;
+}
