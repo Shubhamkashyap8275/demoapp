@@ -43,3 +43,7 @@ img {
     width: 40px;
     height: auto;
 }
+.mat-icon.mat-ligature-font[fontIcon]::before {
+    content: attr(fontIcon);
+    color: #3d4fb3;
+}
