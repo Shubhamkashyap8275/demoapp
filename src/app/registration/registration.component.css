@@ -23,3 +23,23 @@ flex-direction: column;
 button {
 margin-top: 20px;
 }
+img {
+    width: 100px;
+    border-radius: 50%;
+    object-fit: fill;
+} 
+.placeholder {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 30px;
+}
+.icon {
+    position: relative;
+    top: 30px;
+    right: 19px;
+    background: transparent;
+    font-size: 35px;
+    width: 40px;
+    height: auto;
+}

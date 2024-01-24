@@ -4,12 +4,12 @@
       <mat-tab label="Login">
         <mat-card>
           <mat-card-content>
-            <form>
+            <form [formGroup]="loginForm">
               <mat-form-field>
-                <input matInput placeholder="Username" [(ngModel)]="username" name="username" required>
+                <input matInput placeholder="Username" formControlName="username" >
               </mat-form-field>
               <mat-form-field>
-                <input matInput type="password" placeholder="Password" [(ngModel)]="password" name="password" required>
+                <input matInput type="password" placeholder="Password" formControlName="password" >
               </mat-form-field>
               <button mat-raised-button color="primary" (click)="login()">Login</button>
             </form>

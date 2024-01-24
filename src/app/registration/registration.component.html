@@ -1,4 +1,10 @@
 <form [formGroup]="registrationForm" class="example-form">
+  <div class="placeholder">
+    <img [src]="previewImage?previewImage:'assets/placeholder.png'" >
+    <input #file type="file" style="display:none;" (change)="onFileChange($event)">
+    <mat-icon class="icon"aria-hidden="false" aria-label="Example home icon" fontIcon="add_circle" (click)="file.click()"></mat-icon>
+
+  </div>
     <mat-form-field class="example-full-width">
       <input matInput placeholder="Username" formControlName="username" name="username" required>
       <mat-error *ngIf="username?.errors?.['required']">Username is required</mat-error>
