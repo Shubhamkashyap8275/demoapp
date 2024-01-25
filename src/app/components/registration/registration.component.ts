@@ -1,12 +1,12 @@
 import { CommonModule } from '@angular/common';
-import { HttpClient, HttpClientModule } from '@angular/common/http';
+import { HttpClient } from '@angular/common/http';
 import { Component, OnInit } from '@angular/core';
 import { FormBuilder, FormGroup, FormsModule, ReactiveFormsModule, Validators } from '@angular/forms';
 import { MatButtonModule } from '@angular/material/button';
 import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatInputModule } from '@angular/material/input';
-import { environment } from '../../environments/environment.development';
-import { LogService } from '../log.service';
+import { environment } from '../../../environments/environment.development';
+import { LogService } from '../../services/log/log.service';
 import { ToastrModule, ToastrService } from 'ngx-toastr';
 import { MatIconModule } from '@angular/material/icon';
 
@@ -14,7 +14,7 @@ import { MatIconModule } from '@angular/material/icon';
 @Component({
   selector: 'app-registration',
   standalone: true,
-  imports: [FormsModule, MatFormFieldModule, MatInputModule, MatButtonModule, ReactiveFormsModule, CommonModule, HttpClientModule, ToastrModule, MatIconModule],
+  imports: [FormsModule, MatFormFieldModule, MatInputModule, MatButtonModule, ReactiveFormsModule, CommonModule, ToastrModule, MatIconModule],
   templateUrl: './registration.component.html',
   styleUrls: ['./registration.component.css']
 })
